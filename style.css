@@ -10,16 +10,20 @@
 
 /* primary button style */
 .primary-btn{
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #FFFFFF;
   background-color: #FF900E;
-  padding: 20px 27px;
+  padding: 16px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 
+/* primary margin */
+  .margin{
+    margin-top: 70px;
+  }
 *{
   margin: 0%;
   padding: 0%;
@@ -79,7 +83,7 @@
 }
 
 .banner-text button{
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 }
 
 
@@ -97,28 +101,89 @@
 
 .banner-image img{
   width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-bottom: 30px;
 }
 
+/*  main section styling */
+main{
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+/* Feature section styling */
+.feature-container{
+  display: flex;
+}
+
+.team-images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.team-images img{
+  max-width: 240px;
+  border-radius: 13px;
+}
+
+.feature-texts{
+  margin: auto auto auto 80px;
+}
+
+.feature-texts h3{
+  font-size: 2.7rem;
+  margin-bottom: 12px;
+}
+
+#Quick-letter{
+  font-weight: normal;
+  color: #727272;
+}
+
+#Our-letter{
+  font-weight: bold;
+  color: #131313;
+}
+
+#Features-letter{
+  font-weight: bold;
+  color: #FF900E;
+}
+
+.feature-texts p{
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #727272;
+}
+
+
 /* responsive style */
+/*  for small devices Like phone */
 @media screen and (max-width : 576px) {
   .nav-container, 
-  .nav-links{
+  .nav-links,
+  .feature-container{
     flex-direction: column;
   }
+
   .nav-links{
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
   }
+
   .banner-container{
     margin-top: 60px;
   }
+
   .banner-text h1{
     font-size: 2.8rem;
     font-weight: bold;
     color: #131313;
   }
+
   .banner-text h1{
     margin-bottom: 7px;
   }
@@ -130,5 +195,35 @@
   .banner-text button{
     margin-bottom: 15px;
   }
+
+  .team-images{
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
   
+  .team-images img{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feature-texts{
+    margin: 0 10%;
+  }
+}
+
+/*  for small devices Like phone */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav-container, 
+  .nav-links,
+  .feature-container{
+    flex-direction: column;
+  }
+
+  .team-images{
+    margin: 50px auto;
+  }
+
+  .feature-texts{
+    margin: 0 21%;
+  }
 }
