@@ -20,10 +20,6 @@
   cursor: pointer;
 }
 
-/* primary margin */
-  .margin{
-    margin-top: 70px;
-  }
 *{
   margin: 0%;
   padding: 0%;
@@ -106,14 +102,10 @@
   margin-bottom: 30px;
 }
 
-/*  main section styling */
-main{
-  max-width: 1030px;
-  margin: 0 auto;
-}
-
 /* Feature section styling */
 .feature-container{
+  max-width: 1030px;
+  margin: 90px auto;
   display: flex;
 }
 
@@ -156,6 +148,78 @@ main{
   font-size: 0.9rem;
   font-weight: normal;
   color: #727272;
+}
+ /*  loving feature section styling */
+.loving_features{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.loving_features_contains{
+  margin-right: 80px;
+  margin-top: 40px;
+}
+
+.loving_features_contains h1{
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #131313;
+  border-left: 4px solid #FF900E;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.loving_features_contains p{
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #727272;
+  margin-top: 7px;
+}
+
+.loving_features_cards .card-container{
+  background-color: #FFFFFF;
+  padding: 30px 22px 10px 30px;
+  box-shadow: 2px 2px 10px #A1A1A1;
+  border-radius: 10px;
+  margin-bottom: 17px;
+}
+
+.card-container h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #131313;
+}
+
+.card-container p{
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #727272;
+}
+
+.loving_features_images img{
+  max-width: 580px;
+}
+
+.feature-btn h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.feature-btn h5{
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+.feature-btn {
+  padding: 35px 35px;
+  background-color: #FF900E;
+  border: none;
+  border-radius: 5px;
+  margin-top: -100px;
+  margin-left: -50px;
 }
 
 
