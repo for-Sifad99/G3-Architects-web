@@ -121,6 +121,7 @@
 }
 
 .feature-texts{
+  min-width: 30%;
   margin: auto auto auto 80px;
 }
 
@@ -157,6 +158,7 @@
 }
 
 .loving_features_contains{
+  max-width: 40%;
   margin-right: 80px;
   margin-top: 40px;
 }
@@ -197,8 +199,12 @@
   color: #727272;
 }
 
+.loving_features_images{
+  max-width: 70%;
+}
+
 .loving_features_images img{
-  max-width: 580px;
+  max-width: 100%;
 }
 
 .feature-btn h1{
@@ -228,7 +234,8 @@
 @media screen and (max-width : 576px) {
   .nav-container, 
   .nav-links,
-  .feature-container{
+  .feature-container,
+  .loving_features{
     flex-direction: column;
   }
 
@@ -243,15 +250,12 @@
   }
 
   .banner-text h1{
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: bold;
     color: #131313;
-  }
-
-  .banner-text h1{
     margin-bottom: 7px;
   }
-
+  
   .banner-text p{
     margin-bottom: 12px;
   }
@@ -262,16 +266,65 @@
 
   .team-images{
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 10px;
   }
   
   .team-images img{
-    max-width: 300px;
+    max-width: 280px;
     margin-left: auto;
     margin-right: auto;
+    padding: 3px auto;
   }
+
+  .feature-container{
+    margin-bottom: 60px;
+  }
+
   .feature-texts{
-    margin: 0 10%;
+    padding:  10% 15%;
+    margin: 0 auto;
+  }  
+
+  .feature-texts h3{
+    font-size: 2rem;
+  }
+
+  .feature-texts p{
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: #727272;
+  }
+
+  .loving_features_contains{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .loving_features_contains h1{
+    font-size: 2rem;
+  }
+  
+  .loving_features_contains p{
+    font-size: 0.7rem;
+  }
+
+  .loving_features_images img{
+    margin-left: 55px;
+  }
+
+  .feature-btn h1{
+    font-size: 1.7rem;
+  }
+  
+  .feature-btn h5{
+    font-size: 0.6rem;
+  }
+  
+  .feature-btn {
+    padding: 28px 23px;
+    border-radius: 3px;
+    margin-top: -100px;
+    margin-left: 2px ;
   }
 }
 
@@ -285,9 +338,5 @@
 
   .team-images{
     margin: 50px auto;
-  }
-
-  .feature-texts{
-    margin: 0 21%;
   }
 }
